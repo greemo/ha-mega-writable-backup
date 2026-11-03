@@ -13,7 +13,7 @@ Home Assistant is given a **folder link plus auth key**, not your Mega account p
 
 ## Create the writable folder
 
-Do this in **MEGAcmd**, not in the Mega website. A web **file request** uses a different encryption scheme. MEGAcmd cannot log into a file request for writes, and this add-on cannot use one.
+Do this in **MEGAcmd** from a dev machine (likely not the HA machine), not in the Mega website. A web **file request** uses a different encryption scheme. MEGAcmd cannot log into a file request for writes, and this add-on cannot use one.
 
 ### 1. Install MEGAcmd
 
