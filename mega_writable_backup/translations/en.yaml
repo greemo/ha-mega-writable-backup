@@ -1,0 +1,13 @@
+configuration:
+  folder_url:
+    name: Mega folder URL
+    description: Writable folder link from MEGAcmd, like https://mega.nz/folder/HANDLE#KEY
+  auth_key:
+    name: Auth key
+    description: The auth-key from MEGAcmd (the part after the colon on the AuthToken line). You can also paste the whole AuthToken.
+  keep:
+    name: Backups to keep
+    description: Oldest uploaded backup files are deleted once this count is exceeded
+  sync_minutes:
+    name: Sync interval (minutes)
+    description: How often to look in /backup and upload new files

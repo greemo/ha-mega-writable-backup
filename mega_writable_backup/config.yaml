@@ -1,0 +1,31 @@
+name: MEGA Writable Backup
+version: "1.0.1"
+slug: mega_writable_backup
+description: Upload Home Assistant backups to a Mega writable folder with MEGAcmd
+url: https://github.com/greemo/ha-mega-writable-backup
+arch:
+  - amd64
+  - aarch64
+init: false
+startup: application
+boot: auto
+apparmor: false
+privileged:
+  - SYS_ADMIN
+devices:
+  - /dev/fuse
+map:
+  - type: backup
+    read_only: true
+  - type: app_config
+    read_only: false
+options:
+  folder_url: ""
+  auth_key: ""
+  keep: 14
+  sync_minutes: 30
+schema:
+  folder_url: str
+  auth_key: password
+  keep: int(1,90)
+  sync_minutes: int(5,1440)
