@@ -22,7 +22,8 @@ This add-on is that missing piece for Home Assistant OS: after you create the ex
 
 | Project | Difference |
 | --- | --- |
-| [Home Assistant Community Apps](https://github.com/hassio-addons/repository) | Default community store. It does not include Mega, and it is not accepting third-party apps. |
+| [Home Assistant Marketplace / HACS](https://www.hacs.xyz/docs/publish/) | Catalog for integrations, dashboard cards, themes, and templates. It does not install Home Assistant OS apps (add-ons). |
+| [Home Assistant Community Apps](https://github.com/hassio-addons/repository) | Default community app store. It does not include Mega, and it is not accepting third-party apps. |
 | [heidrich76 MEGAcmd](https://github.com/heidrich76/ha-addons) | MEGAcmd shell/GUI. You log in with the full Mega account and sync folders yourself. |
 | [rclone-backup](https://github.com/jcwillox/hassio-rclone-backup) | Can target Mega, but rclone's Mega backend needs email and password. |
 | [MEGA S4 integration](https://github.com/luizof/mega_s4_ha_integration) | Native backup agent for paid MEGA S4 object storage, not a normal Mega folder. |
@@ -36,6 +37,8 @@ This add-on does **not** register as a Home Assistant backup location. Home Assi
 3. Add:
 
    `https://github.com/greemo/ha-mega-writable-backup`
+
+   This is an **app repository**, not a Marketplace/HACS custom repository. Do not add it under Settings → Marketplace.
 
 4. Find **MEGA Writable Backup**, install it, then open **Documentation** in the add-on for MEGAcmd setup.
 
